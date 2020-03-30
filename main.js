@@ -108,7 +108,11 @@ Bus.on('create-window', (tag) => {
 });
 
 Bus.on('open-room', (tag) => {
-    mainWindow.loadURL(dataStore.getRoomUrl());
+    mainWindow.loadURL(dataStore.getRoomUrl(tag));
+});
+
+Bus.on('home', (tag) => {
+    mainWindow.loadURL(dataStore.getHomeUrl());
 });
 
 app.whenReady().then(() => {

@@ -23,6 +23,10 @@ class DataStore extends Store {
         return MEET_ROOT + tag;
     }
 
+    getHomeUrl() {
+        return MEET_ROOT;
+    }
+
     getInitialUrl() {
         this.getHistory();
         if (!this.preferences.reconnectOnStartup) {

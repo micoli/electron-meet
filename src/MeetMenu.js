@@ -32,11 +32,17 @@ const displayMenu = (tray) => {
     }, {
         type: 'separator'
     }, {
+        label: 'Home',
+        click: function () {
+            Bus.emit('home');
+        }
+    }, {
         label: 'Main window',
         click: function () {
             Bus.emit('create-window');
-
         }
+    }, {
+        type: 'separator'
     }, {
         label: 'Autoreconnect on startup',
         type: 'checkbox',
