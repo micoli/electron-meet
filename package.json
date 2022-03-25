@@ -18,7 +18,7 @@
   "author": "micoli",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^8.5.2",
+    "electron": "^13.6.6",
     "electron-icon-maker": "0.0.4",
     "electron-packager": "^14.2.1",
     "release-it": "^13.4.0"
